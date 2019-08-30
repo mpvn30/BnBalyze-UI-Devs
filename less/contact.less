@@ -1,14 +1,29 @@
 .contact-wrapper{
     width: @desktop-width;
     margin: 0 auto;
-    padding:50px;
+    padding:30px;
     background-color:@main-color;
     color: #ffff;
-    line-height: 3;
-        // .contact-header
-        // .contact
-        i{
+    line-height: 2;
+       
+    @media @phone{
+        width: @mobile-width;
+        padding: 30px 10px;
+        h3{
+            font-size: 30px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+         i{
             color: #ffff;
         }
+        .socialIcons{
+            display:flex;
+            justify-content: space-between;
+            width: 20%
+        }
+       
 }
 

@@ -142,6 +142,7 @@ h3 {
 }
 a {
   text-decoration: none;
+  color: #ffffff;
 }
 i {
   color: #FF5A5F;
@@ -153,22 +154,62 @@ p {
   display: flex;
   justify-content: space-between;
   width: 1440px;
-  height: 129px;
+  height: auto;
   margin: 0 auto;
   box-shadow: 0px 22px 10px -22px rgba(0, 0, 0, 0.25);
 }
-.navLogo,
-.navLinks {
+@media  (max-width: 500px)  {
+  .navigation {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+}
+.navigation .navLogo {
   height: 47px;
   margin: 41px 54px;
   width: 50%;
 }
-.navLinks {
+@media  (max-width: 500px)  {
+  .navigation .navLogo {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+.navigation .navLogo p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 47px;
+  color: #FF5A5F;
+}
+@media  (max-width: 500px)  {
+  .navigation .navLogo p {
+    font-size: 30px;
+    padding: 0;
+  }
+}
+.navigation .navLinks {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 47px;
+  margin: 41px 54px;
+  width: 50%;
 }
-.navLogo p {
+@media  (max-width: 500px)  {
+  .navigation .navLinks {
+    margin: 0 auto;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.navigation .navLinks a {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 600;
@@ -176,20 +217,22 @@ p {
   line-height: 47px;
   color: #FF5A5F;
 }
-.navLinks a {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 47px;
-  color: #FF5A5F;
+@media  (max-width: 500px)  {
+  .navigation .navLinks a {
+    font-size: 30px;
+  }
 }
 .how {
   width: 1440px;
-  height: 60vh;
+  height: auto;
   margin: 0 auto;
   display: flex;
   box-shadow: 0px 22px 10px -22px rgba(0, 0, 0, 0.25);
+}
+@media  (max-width: 500px)  {
+  .how {
+    width: 500px;
+  }
 }
 .how .how-header {
   padding: 50px;
@@ -202,20 +245,48 @@ p {
   padding: 50px;
   font-family: "Raleway";
 }
+@media  (max-width: 500px)  {
+  .how .boxes {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .how .boxes .box {
   width: 25%;
   margin: 30px;
   padding: 20px;
   box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.25);
 }
+@media  (max-width: 500px)  {
+  .how .boxes .box {
+    width: auto;
+  }
+}
 .contact-wrapper {
   width: 1440px;
   margin: 0 auto;
-  padding: 50px;
+  padding: 30px;
   background-color: #FF5A5F;
   color: #ffff;
-  line-height: 3;
+  line-height: 2;
+}
+@media  (max-width: 500px)  {
+  .contact-wrapper {
+    width: 500px;
+    padding: 30px 10px;
+  }
+  .contact-wrapper h3 {
+    font-size: 30px;
+  }
+  .contact-wrapper p {
+    font-size: 20px;
+  }
 }
 .contact-wrapper i {
   color: #ffff;
+}
+.contact-wrapper .socialIcons {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
 }
